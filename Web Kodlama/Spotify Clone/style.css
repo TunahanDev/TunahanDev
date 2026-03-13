@@ -1,0 +1,1091 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+header i {
+    color: rgb(197, 197, 197);
+}
+
+header i:hover {
+    transition: .2s;
+    color: rgb(245, 245, 245);
+    transform: scale(1.05);
+}
+
+nav {
+    height: 70px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(197, 197, 197);
+}
+
+.nav-left,
+.nav-mid,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left i {
+    font-size: 2rem;
+
+}
+
+.nav-mid #home-alt {
+    font-size: 1.8rem;
+    padding: 10px;
+    margin: 0 25px;
+    background-color: #202020;
+    border-radius: 50%;
+}
+
+.nav-mid-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    background-color: #202020;
+    border: none;
+    color: rgb(216, 216, 216);
+    padding: 15px 250px 15px 50px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    outline: none;
+    flex-grow: 1;
+}
+
+input[type="text"]:focus {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#search-alt {
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+
+input[type="text"]::placeholder {
+    color: rgb(197, 197, 197);
+}
+
+.nav-right {
+    width: 400px;
+    padding: 0 15rem 0 0;
+}
+
+.nav-right h4 {
+    white-space: nowrap;
+    margin-right: 15px;
+    font-weight: 700;
+    color: black;
+    background: #fff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: .84rem;
+    cursor: pointer;
+}
+
+.nav-right h4:hover {
+    transform: scale(1.04);
+    background-color: #ffffffde;
+}
+
+.nav-right i {
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+.nav-right a {
+    padding: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: url(icon/user.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    background-color: black;
+    height: 100vh;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    column-gap: 8px;
+    position: relative;
+}
+
+.section-left {
+    background-color: #131313;
+    border-radius: 10px;
+    color: rgb(197, 197, 197);
+    height: 100vh;
+}
+
+.section-left i {
+    font-size: 2rem;
+}
+
+.section-left-top {
+    padding: 10px 20px 5px 20px;
+}
+
+.section-left-top a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-weight: 800;
+    padding: 8px;
+    transition: .3s;
+}
+
+.section-left-top a:hover {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+.section-left-top a i {
+    margin-right: 10px;
+}
+
+.library-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.library-row-box {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.library-row-box i {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.library-row-box i:hover {
+    transform: scale(1.1);
+    background-color: rgb(39, 39, 39);
+    border-radius: 50%;
+}
+
+.library-row-alt {
+    display: flex;
+}
+
+.library-row-alt span {
+    color: white;
+    padding: 8px 10px;
+    background-color: #2c2c2c;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.library-row-alt span:hover {
+    background-color: #3b3b3b;
+}
+
+.library-row-alt span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.search-date {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.search-date i {
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+.search-date i[class="bx bx-search"]:hover {
+    background-color: rgb(39, 39, 39);
+    border-radius: 50%;
+    transform: scale(1.1);
+    margin: 0;
+}
+
+.search-date i[class="bx bx-search"] {
+    cursor: pointer;
+}
+
+.search-date-right {
+    font-size: .9rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.search-date-right:hover {
+    color: rgb(245, 245, 245);
+}
+
+.section-fav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-music {
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.fav-music-background i {
+    color: white;
+    font-size: 1.2rem;
+    padding: 17px;
+    background-image: linear-gradient(-60deg, #b2e2e2 0%, #3c06ff 100%);
+    border-radius: 5px;
+}
+
+.fav-music-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-music-column p:first-child {
+    color: rgb(30, 215, 96);
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.fav-music-column i {
+    color: rgb(30, 215, 96);
+    font-size: 1.2rem;
+}
+
+.fav-music-column-alt {
+    display: flex;
+    flex-direction: row;
+    font-size: .85rem;
+    margin-left: 10px;
+}
+
+.fav-music-column-alt i {
+    margin-right: 5px;
+}
+
+.fav-music-background2 {
+    background: url(icon/non-stop-pop-fm.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music-background3 {
+    background: url(icon/duman.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music-background4 {
+    background: url(icon/rock-playlist.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music-background5 {
+    background: url(icon/music-4.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music-background6 {
+    background: url(icon/kalp.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music-background7 {
+    background: url(icon/halsey-albüm.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music-background8 {
+    background: url(icon/ncs.jpg) no-repeat;
+    background-size: cover;
+    width: 53.2px;
+    height: 53.2px;
+    border-radius: 5px;
+}
+
+.fav-music2,
+.fav-music3,
+.fav-music4,
+.fav-music5,
+.fav-music6,
+.fav-music7,
+.fav-music8 {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin: 0px 8px 0 8px;
+    cursor: pointer;
+}
+
+.fav-music2:hover,
+.fav-music3:hover,
+.fav-music4:hover,
+.fav-music5:hover,
+.fav-music6:hover,
+.fav-music7:hover,
+.fav-music8:hover {
+    background-color: #1d1d1d;
+}
+
+.fav-music-column2,
+.fav-music-column3,
+.fav-music-column4,
+.fav-music-column5,
+.fav-music-column6,
+.fav-music-column7,
+.fav-music-column8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-music-column2 p,
+.fav-music-column3 p,
+.fav-music-column4 p,
+.fav-music-column5 p,
+.fav-music-column6 p,
+.fav-music-column7 p,
+.fav-music-column8 p {
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.fav-music-column-alt2 p,
+.fav-music-column-alt3 p,
+.fav-music-column-alt4 p,
+.fav-music-column-alt5 p,
+.fav-music-column-alt6 p,
+.fav-music-column-alt7 p,
+.fav-music-column-alt8 p {
+    color: #c5c5c5;
+    font-size: .85rem;
+}
+
+/* MİD-SECTİON HERE CODE */
+
+.section-mid {
+    background-color: #131313;
+    border-radius: 10px;
+    color: rgb(197, 197, 197);
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.section-mid-spons {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+
+}
+
+.section-mid:hover {
+    overflow-y: scroll;
+}
+
+.section-mid::-webkit-scrollbar {
+    width: 10px;
+    /* Scroll bar'ın genişliği */
+    height: 10px;
+    /* Scroll bar'ın yüksekliği (yatay scroll için) */
+}
+
+/* Scroll bar'ın arka planını beyaz yapıyoruz */
+.section-mid::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Scroll bar'ın tutamaç (thumb) kısmını gri yapıyoruz */
+.section-mid::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 155, 155);
+    /* Thumb kısmı gri olacak */
+    border-radius: 2px;
+    max-height: 15px;
+    /* Scroll bar thumb'ının minimum uzunluğu */
+    /* Thumb kısmının kenarlarını yuvarlatabiliriz */
+}
+
+/* Hover durumunda thumb kısmının rengini değiştirebiliriz */
+.section-mid::-webkit-scrollbar-thumb:hover {
+    background-color: #b6b6b6;
+    /* Hover durumunda daha koyu gri */
+}
+
+.fav-music-mid-top {
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 20px 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    /* Konumlandırma için gerekli */
+    overflow: hidden;
+}
+
+.fav-music-mid-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(91, 47, 211, 0.5) 0%, rgba(14, 2, 48, 0.5) 100%);
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fav-music-background-mid-top {
+    color: white;
+    font-size: 5rem;
+    padding: 70px 75px;
+    background-image: linear-gradient(-60deg, #b2e2e2 0%, #3c06ff 100%);
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.fav-music-column-mid-top {
+    position: relative;
+    /* İçeriğin konumlandırılması için gerekli */
+    z-index: 2;
+    /* Metni üstte göstermek için */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fav-music-column-mid-top p:nth-child(1) {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 4.4rem;
+    margin-left: 30px;
+    margin-top: 10px;
+    overflow: hidden;
+    /* Taşan metni gizler */
+    white-space: nowrap;
+    /* Metni bir satırda tutar */
+    pointer-events: none;
+}
+
+.fav-music-column-alt-mid-top p:first-child {
+    color: rgb(212, 212, 212);
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    font-size: .84rem;
+    margin-left: 30px;
+}
+
+.fav-music-column-alt-mid-top-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px 0 0 30px;
+
+}
+
+.fav-music-column-alt-mid-top-profile span {
+    padding: 13px;
+    border-radius: 50%;
+    background: url(icon/user.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fav-music-column-alt-mid-top-profile .profile-user {
+    color: white;
+    font-weight: 800;
+    font-size: .8rem;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.fav-music-column-alt-mid-top-profile .profile-user:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fav-music-column-alt-mid-top-profile,
+.profile-song-items {
+    font-size: .9rem;
+    cursor: default;
+}
+
+.section-mid-bottom-top {
+    margin: 25px 30px 35px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-mid-bottom-top-left i:nth-child(1) {
+    font-size: 3rem;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(30 215 96);
+    color: black;
+    cursor: pointer;
+}
+
+.section-mid-bottom-top-left i:nth-child(1):hover {
+    background-color: rgb(34, 243, 107);
+    transform: scale(1.04);
+}
+
+.section-mid-bottom-top-left i:nth-child(2) {
+    font-size: 1.8rem;
+    margin: 0 25px;
+    color: rgb(30 215 96);
+    cursor: pointer;
+}
+
+.section-mid-bottom-top-left i:nth-child(2):hover {
+    transform: scale(1.04);
+}
+
+.section-mid-bottom-top-left i:nth-child(3) {
+    font-size: 1.8rem;
+    color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.section-mid-bottom-top-left i:nth-child(3):hover {
+    color: white;
+    transform: scale(1.04);
+}
+
+
+.section-mid-bottom-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.section-mid-bottom-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-mid-bottom-top-right p {
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.section-mid-bottom-top-right i:nth-child(1) {
+    margin: 4px 20px 0 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.section-mid-bottom-top-right i:nth-child(1):hover {
+    background-color: #2c2c2c;
+    border-radius: 50%;
+}
+
+.section-mid-bottom-top-right i:last-child {
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+
+}
+
+.section-mid-bottom-alt {
+    margin: 0px 30px;
+}
+
+.divider {
+    margin-top: 15px;
+    height: 1px;
+    background-color: rgba(68, 68, 68, 0.4);
+    /* İstediğiniz renk kodunu buraya yazın */
+    border: none;
+
+}
+
+.song-bottom-top {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    color: #a1a1a1;
+    cursor: default;
+}
+
+.song-bottom-top-first,
+.song-bottom-top-one,
+.song-bottom-top-two,
+.song-bottom-top-three,
+.song-bottom-top-four {
+    display: flex;
+    align-items: center;
+}
+
+.song-bottom-top-first {
+    display: flex;
+    flex: 4;
+}
+
+.song-bottom-top-one {
+    display: flex;
+    flex: 45;
+}
+
+.song-bottom-top-one span {
+    margin-right: 20px;
+}
+
+.song-bottom-top-one p:hover {
+    color: white;
+}
+
+.song-bottom-top-two {
+    display: flex;
+    flex: 35;
+}
+
+.song-bottom-top-two p:hover {
+    color: white;
+}
+
+.song-bottom-top-three {
+    display: flex;
+    flex: 35;
+}
+
+.song-bottom-top-three p:hover {
+    color: white;
+}
+
+.song-bottom-top-three i {
+    color: rgb(30, 215, 96);
+    margin-left: 7px;
+}
+
+.song-bottom-top-four {
+    display: flex;
+    flex: 4;
+}
+
+.section-mid-bottom-music-group {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 8px 0;
+    cursor: default;
+}
+
+#music-group-first {
+    margin: 20px 0 0 0;
+}
+
+.section-mid-bottom-music-group:hover {
+    background-color: #202020;
+    border-radius: 7px;
+}
+
+.number {
+    display: flex;
+    flex: 2;
+    margin-left: 25px;
+    color: #c5c5c5;
+}
+
+.sanatci {
+    color: white;
+}
+
+.number-active {
+    color: rgb(30, 215, 96);
+}
+
+.sanatci-active {
+    color: rgb(30, 215, 96);
+}
+
+
+
+.img-1 {
+    background: url(icon/xcho.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-2 {
+    background: url(icon/summer\ days.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-3 {
+    background: url(icon/arcade.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-4 {
+    background: url(icon/ncs.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-5 {
+    background: url(icon/halsey-albüm.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-6 {
+    background: url(icon/21savage.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-7 {
+    background: url(icon/stressed-out.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-8 {
+    background: url(icon/sean-paul.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-9 {
+    background: url(icon/red.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-10 {
+    background: url(icon/arkaplan.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-11 {
+    background: url(icon/divide.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-12 {
+    background: url(icon/dkt.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-13 {
+    background: url(icon/freaks-curse.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-14 {
+    background: url(icon/justin.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-15 {
+    background: url(icon/kalpsiz.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-16 {
+    background: url(icon/kronik.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-17 {
+    background: url(icon/music-2.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-18 {
+    background: url(icon/music.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-19 {
+    background: url(icon/smile.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-20 {
+    background: url(icon/mgmt.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-21 {
+    background: url(icon/spit-on-my.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-22 {
+    background: url(icon/music-4.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-23 {
+    background: url(icon/kalpsiz.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-24 {
+    background: url(icon/remedy.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-25 {
+    background: url(icon/hymnfor.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-26 {
+    background: url(icon/freaks-curse.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+
+.baslik {
+    color: white;
+    display: flex;
+    flex: 18;
+    flex-direction: row;
+}
+
+.baslik .sanatci:not(.sanatci-active) {
+    color: white;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+
+.baslik-alt-bolum {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    justify-content: center;
+    color: #a1a1a1;
+    font-size: .9rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.album {
+    display: flex;
+    flex: 6;
+    font-size: .9rem;
+}
+
+.album:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.eklenme-tarih {
+    display: flex;
+    font-size: .8rem;
+    justify-content: center;
+    flex: 22;
+}
+
+.date {
+    display: flex;
+    font-size: .8rem;
+    flex: 3.5;
+}
+
+.section-right {
+    background-color: #131313;
+}

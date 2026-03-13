@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/spotify.jpg" type="image/x-icon">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+        <div class="nav-left">
+        <i class='bx bx-dots-horizontal-rounded'></i>
+        <i class='bx bx-chevron-left'></i>
+        <i class='bx bx-chevron-right'></i>
+        </div>
+
+        <div class="nav-mid">
+            <i id="home-alt" class='bx bx-home-alt'></i>
+            <div class="nav-mid-input">
+                <i id="search-alt" class='bx bx-search'></i>
+                <input type="text" id="search" placeholder="Ne çalmak istiyorsun?">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <h4>Premium'u keşfet</h4>
+            <i class='bx bx-bell' ></i>
+            <i class='bx bx-group'></i>
+            <a href="#"></a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="section-left">
+                <div class="section-left-top">
+                    <div class="library-row"><a href="#"><i class='bx bx-library'></i> Kitaplığın</a> <div class="library-row-box"><i class='bx bx-plus'></i> <i class='bx bx-right-arrow-alt'></i></div></div>
+                    <div class="library-row-alt">
+                    <span>Çalma Listeleri</span>
+                    <span>Sanatçılar</span>
+                    </div>
+                    <div class="search-date"><i class='bx bx-search'></i> <div class="search-date-right">Yakın tarihli <i class='bx bx-list-ul'></i></div></div>
+                </div>
+                <div class="section-left-alt">
+                    <div class="section-fav-list">
+                    <div class="fav-music"><div class="fav-music-background"><i class='bx bxs-heart'></i></div> <div class="fav-music-column"><p>Beğenilen Şarkılar</p> <div class="fav-music-column-alt"><i class='bx bxs-pin bx-rotate'></i> <p>Çalma Listesi • 286 Şarkı</p></div></div></div>
+
+                    <div class="fav-music2">
+                        <div class="fav-music-background2"></div>
+                        <div class="fav-music-column2">
+                            <p>Non-Stop-Pop FM</p>
+                            <div class="fav-music-column-alt2">
+                                <p>Çalma Listesi • RockStar Games</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fav-music3">
+                        <div class="fav-music-background3"></div>
+                        <div class="fav-music-column3">
+                            <p>Duman Albüm</p>
+                            <div class="fav-music-column-alt3">
+                                <p>Çalma Listesi • Duman</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fav-music4">
+                        <div class="fav-music-background4"></div>
+                        <div class="fav-music-column4">
+                            <p>10s Rock Anthems</p>
+                            <div class="fav-music-column-alt4">
+                                <p>Çalma Listesi • Spotify</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fav-music5">
+                        <div class="fav-music-background5"></div>
+                        <div class="fav-music-column5">
+                            <p>Müzik</p>
+                            <div class="fav-music-column-alt5">
+                                <p>Çalma Listesi • Müzik</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fav-music6">
+                        <div class="fav-music-background6"></div>
+                        <div class="fav-music-column6">
+                            <p>Rastgele Şarkı</p>
+                            <div class="fav-music-column-alt6">
+                                <p>Çalma Listesi • Kalp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fav-music7">
+                        <div class="fav-music-background7"></div>
+                        <div class="fav-music-column7">
+                            <p>Halsey</p>
+                            <div class="fav-music-column-alt7">
+                                <p>Çalma Listesi • Halsey Oris</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fav-music8">
+                        <div class="fav-music-background8"></div>
+                        <div class="fav-music-column8">
+                            <p>NCS Müzik</p>
+                            <div class="fav-music-column-alt8">
+                                <p>Çalma Listesi • NCS</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-mid">
+                <div class="section-mid-top">
+                <div class="fav-music-mid-top">
+                    <div class="fav-music-background-mid-top">
+                        <i class='bx bxs-heart'></i></div> 
+                        <div class="fav-music-column-mid-top">
+                            <div class="fav-music-column-mid-top-favorite"><p>Beğenilen Şarkılar</p><div class="fav-music-column-alt-mid-top-profile"><span></span>
+                                <p class="profile-user">User</p><p class="profile-song-items">• 25 Şarkı </p>
+                            </div></div>
+                            <div class="fav-music-column-alt-mid-top">
+                                <p>Çalma listesi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-mid-bottom">
+                    <div class="section-mid-bottom-top">
+                        <div class="section-mid-bottom-top-left"><i class='bx bx-pause'></i> <i class="bi bi-shuffle"></i> <i class="bi bi-arrow-down-circle"></i></div>
+                         <div class="section-mid-bottom-top-right"><i class='bx bx-search'></i> <p>Eklenme tarihi</p> <i class='bx bx-list-ul'></i></div>
+                    </div>
+                    <div class="section-mid-bottom-alt">
+                        <div class="song-bottom-top">
+                        <div class="song-bottom-top-first"><span>#</span></div>
+                        <div class="song-bottom-top-one"><p>Başlık</p></div>
+                        <div class="song-bottom-top-two"><p>Albüm</p></div>
+                        <div class="song-bottom-top-three"><p>Eklenme tarihi <i class="bi bi-caret-down-fill"></i></p></div>
+                        <div class="song-bottom-top-four"><p><i class="bi bi-clock"></i></p></div>
+                    </div>
+                    <hr class="divider">
+
+                    <div class="section-mid-bottom-music-group" id="music-group-first">
+                        <div class="number">1</div>
+                        <div class="baslik"><div class="img-1"></div><div class="baslik-alt-bolum"><p class="sanatci">Тви и я</p> Xcho</div></div>
+                        <div class="album">Тви и я</div>
+                        <div class="eklenme-tarih">3 gün önce</div>
+                        <div class="date">1:34</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number number-active">2</div>
+                        <div class="baslik">
+                            <div class="img-2"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci sanatci-active">Summer Days</p> Sean Fill
+                            </div>
+                        </div>
+                        <div class="album">Summer Days</div>
+                        <div class="eklenme-tarih">7 gün önce</div>
+                        <div class="date">1:43</div>
+                    </div>
+
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">3</div>
+                        <div class="baslik">
+                            <div class="img-3"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Arcade</p> Skymane
+                            </div>
+                        </div>
+                        <div class="album">Arcade</div>
+                        <div class="eklenme-tarih">2 hafta önce</div>
+                        <div class="date">2:10</div>
+                    </div>
+
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">4</div>
+                        <div class="baslik">
+                            <div class="img-4"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Blank</p> Deaf Kev
+                            </div>
+                        </div>
+                        <div class="album">NCS Müzik</div>
+                        <div class="eklenme-tarih">2 hafta önce</div>
+                        <div class="date">2:35</div>
+                    </div>
+
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">5</div>
+                        <div class="baslik">
+                            <div class="img-5"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Graveyard</p> Halsey
+                            </div>
+                        </div>
+                        <div class="album">Halsey Oris</div>
+                        <div class="eklenme-tarih"> 2 hafta önce </div>
+                        <div class="date">2:13</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">6</div>
+                        <div class="baslik">
+                            <div class="img-6"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Scream & Shout</p> will.i.am, Britney Spears
+                            </div>
+                        </div>
+                        <div class="album">#willpower</div>
+                        <div class="eklenme-tarih">3 hafta önce</div>
+                        <div class="date">1:12</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">7</div>
+                        <div class="baslik">
+                            <div class="img-7"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Stressed Out</p> Twenty One Pilots
+                            </div>
+                        </div>
+                        <div class="album">BlurryFace</div>
+                        <div class="eklenme-tarih">3 hafta önce</div>
+                        <div class="date">2:23</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">8</div>
+                        <div class="baslik">
+                            <div class="img-8"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">No Lie</p> Sean Paul, Dua Lipa
+                            </div>
+                        </div>
+                        <div class="album">No Lie</div>
+                        <div class="eklenme-tarih">4 hafta önce</div>
+                        <div class="date">2:56</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">9</div>
+                        <div class="baslik">
+                            <div class="img-9"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Happy Nation</p> Ace of base
+                            </div>
+                        </div>
+                        <div class="album">Happy Nation</div>
+                        <div class="eklenme-tarih">1 ay önce</div>
+                        <div class="date">3:49</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">10</div>
+                        <div class="baslik">
+                            <div class="img-10"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">How Deep Is Your Love</p> Calvin Harris, Disciples
+                            </div>
+                        </div>
+                        <div class="album">Disciples</div>
+                        <div class="eklenme-tarih">1 ay önce</div>
+                        <div class="date">3:36</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">11</div>
+                        <div class="baslik">
+                            <div class="img-11"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Hot</p> INNA
+                            </div>
+                        </div>
+                        <div class="album">Hot</div>
+                        <div class="eklenme-tarih">1 ay önce</div>
+                        <div class="date">3:18</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">12</div>
+                        <div class="baslik">
+                            <div class="img-12"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Ticking Away</p> Valorant
+                            </div>
+                        </div>
+                        <div class="album">Ticking Away</div>
+                        <div class="eklenme-tarih">1 ay önce</div>
+                        <div class="date">1:14</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">13</div>
+                        <div class="baslik">
+                            <div class="img-13"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Freaks</p> Surf Curse
+                            </div>
+                        </div>
+                        <div class="album">Freaks</div>
+                        <div class="eklenme-tarih">2 ay önce</div>
+                        <div class="date">1:19</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">14</div>
+                        <div class="baslik">
+                            <div class="img-14"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Te Molla</p> Kai Angel, 9mice
+                            </div>
+                        </div>
+                        <div class="album">HEAVY METAL</div>
+                        <div class="eklenme-tarih">2 ay önce</div>
+                        <div class="date">4:05</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">15</div>
+                        <div class="baslik">
+                            <div class="img-15"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">I'm Good Blue</p>David Guetta, Bebe Rexha
+                            </div>
+                        </div>
+                        <div class="album">I'm Good (blue)</div>
+                        <div class="eklenme-tarih">4 ay önce</div>
+                        <div class="date">1:10</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">16</div>
+                        <div class="baslik">
+                            <div class="img-16"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Kron1k</p> No.1
+                            </div>
+                        </div>
+                        <div class="album">Talentino</div>
+                        <div class="eklenme-tarih">4 ay önce</div>
+                        <div class="date">2:50</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">17</div>
+                        <div class="baslik">
+                            <div class="img-17"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Flare</p> Hanson
+                            </div>
+                        </div>
+                        <div class="album">Flare</div>
+                        <div class="eklenme-tarih">5 ay önce</div>
+                        <div class="date">2:29</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">18</div>
+                        <div class="baslik">
+                            <div class="img-18"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Falling</p> Trevor Daniel
+                            </div>
+                        </div>
+                        <div class="album">Falling</div>
+                        <div class="eklenme-tarih">5 ay önce</div>
+                        <div class="date">2:23</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">19</div>
+                        <div class="baslik">
+                            <div class="img-19"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Ice Cream Man</p> Tyga
+                            </div>
+                        </div>
+                        <div class="album">Fuk Wat They</div>
+                        <div class="eklenme-tarih">6 ay önce</div>
+                        <div class="date">2:25</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">20</div>
+                        <div class="baslik">
+                            <div class="img-20"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Little Dark Age</p> MGMT
+                            </div>
+                        </div>
+                        <div class="album">Little Dark Age</div>
+                        <div class="eklenme-tarih">6 ay önce</div>
+                        <div class="date">1:20</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">21</div>
+                        <div class="baslik">
+                            <div class="img-21"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Spit On My Face</p> ThxSoMch
+                            </div>
+                        </div>
+                        <div class="album">SPIT ON MY FC</div>
+                        <div class="eklenme-tarih">6 ay önce</div>
+                        <div class="date">4:20</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">22</div>
+                        <div class="baslik">
+                            <div class="img-22"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">After Dark</p> Mr.kitty
+                            </div>
+                        </div>
+                        <div class="album">Time</div>
+                        <div class="eklenme-tarih">8 ay önce</div>
+                        <div class="date">1:30</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">23</div>
+                        <div class="baslik">
+                            <div class="img-23"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Miss You</p> Oliver Tree
+                            </div>
+                        </div>
+                        <div class="album">Miss You</div>
+                        <div class="eklenme-tarih">8 ay önce</div>
+                        <div class="date">1:28</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">24</div>
+                        <div class="baslik">
+                            <div class="img-24"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Remedy</p> Nora, Chriss Drenchill
+                            </div>
+                        </div>
+                        <div class="album">Remedy</div>
+                        <div class="eklenme-tarih">8 ay önce</div>
+                        <div class="date">3:28</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">25</div>
+                        <div class="baslik">
+                            <div class="img-25"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Hymn For Weekend</p> ColdPlay
+                            </div>
+                        </div>
+                        <div class="album">Head of Dreams</div>
+                        <div class="eklenme-tarih">8 ay önce</div>
+                        <div class="date">5:31</div>
+                    </div>
+
+                    <div class="section-mid-bottom-music-group">
+                        <div class="number">2</div>
+                        <div class="baslik">
+                            <div class="img-25"></div>
+                            <div class="baslik-alt-bolum">
+                                <p class="sanatci">Тви и я</p> Xcho
+                            </div>
+                        </div>
+                        <div class="album">Тви и я</div>
+                        <div class="eklenme-tarih">8 ay önce</div>
+                        <div class="date">5:31</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

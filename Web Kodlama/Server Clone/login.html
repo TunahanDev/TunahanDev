@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Example | Giriş Yap</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Giriş Yap</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Kullanıcı Adı" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Şifre" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label for=""><input type="checkbox"> Beni Hatırla</label>
+                <a href="#">Şifremi unuttum?</a>
+            </div>
+            <button type="submit" class="btn">Giriş Yap</button>
+
+            <div class="register-link">
+                <p>Hesabın Yok mu? <a href="register.html">Kayıt Ol</a></p>
+            </div>
+    </div>
+    </form>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,750;1,14..32,545&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(icon/minecraft-dark-castle-p0j89s548himqy8v.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    width: 420px;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: Inter, sans-serif;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+    
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.container .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 40px rgba(0,0,0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Inter,sans-serif;
+    color: #333;
+}
+
+.register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.register-link p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    </style>
+    </div>
+</body>
+
+</html>

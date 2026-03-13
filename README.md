@@ -2,7 +2,7 @@
 💻 Frontend öğreniyorum  
 🚀 HTML • CSS • JavaScript  
 
-Projects:
+Projeler:
 - Kahve Clone
 - Spotify Clone
 - Starbucks Clone
